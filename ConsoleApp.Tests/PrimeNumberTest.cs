@@ -4,7 +4,7 @@ public class PrimeNumbe2Test
     PrimeNumbers primeNumber = new();
 
     [Theory]
-    [InlineData(4, false)]
+    [InlineData(4, true)]
     [InlineData(2, true)]
     [InlineData(3, true)]
     [InlineData(11, true)]

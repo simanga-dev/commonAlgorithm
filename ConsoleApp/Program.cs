@@ -1,90 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
+int[] a = { 123, 456, 789, 1011, 1213, 1415, 16, 17, 1819, 20,21, 222,3, 2425, 2627, 2829, 3031, 3233, 3435, 3637, 3839, 4041, 4243, 4445, 4647, 4849, 5051, 5253, 5455, 5657, 5859, 6061, 6263, 6465, 6667, 6869, 7071, 7273, 7475, 7677, 7879, 8081, 8283, 8485, 8687, 8889, 9091, 9293, 9495, 9697, 9899, 10001, 10203, 10405, 10607, 10809, 11011, 11213, 11415, 11617, 11819, 12021, 12223, 12425, 12627, 12829, 13031, 13233, 13435, 13637, 13839, 14041, 14243, 14445, 14647, 14849, 15051, 15253, 15455, 15657, 15859, 16061, 16263, 16465, 16667, 16869, 17071, 17273, 17475, 17677, 17879, 18081, 18283, 18485, 18687, 18889, 19091, 19293, 19495, 19697, 19899, 20001, 20202 };
 
 
-// using System.Collections;
-
-// Sorting Stafff
-// SortingAlgorithm sorting = new();
-//
-// int[] array = { 20, 5, 15, 10, 1, 19, 14, 7, 18, 2, 13, 6, 17, 3, 12, 9, 16, 4, 11, 8 };
-//
-// sorting.SelectionSort(array);
+Array arry = new(a);
 
 
+arry.Print();
+arry.Max();
+arry.Min();
+arry.Sort();
+arry.Print();
 
-//  Prime number staff
-
-PrimeNumbers primeNumber = new();
-
-primeNumber.CheckPrime(25);
-
-// PalindromeChecker palindromeChecker = new();
-
-// /home/hendry/workspace/hackerthon/CommonAlgorithm/ConsoleApp/bin/Debug/net8.0/ConsoleApp.dll
-
-// /ConsoleApp/bin/Debug/net7.0/ConsoleApp.dll
-
-// string str = "I am new line, I am new";
-
-// for (int i = 0; i < str.Length; i++)
-// {
-//     Console.WriteLine(str[i]);
-// }
-
-// int i = 0;
-// while (i < str.Length)
-// {
-//     Console.WriteLine(str[i]);
-// }
-
-// str.ToList().ForEach(c => Console.WriteLine(c));
-
-// Array.ForEach(str.ToCharArray(), c => Console.WriteLine(c));
-
-
-// string pop_str = "pop this sentence";
-//
-// while (pop_str.Length > 0)
-// {
-//     pop_str = pop_str.Remove(pop_str.Length - 1);
-//     Console.WriteLine(pop_str);
-// }
-//
-// int?[] test = new int?[5];
-
-// var x;
-// x=10;
-
-
-// while (pop_str.Length > 1)
-// {
-//     string test = pop_str.Remove(-1);
-//     Console.WriteLine(test);
-// }
-
-
-// Hashtable RomanLookup = new Hashtable();
-//
-// RomanLookup.Add("I", 1);               // I             1
-// RomanLookup.Add("V", 5);               // V             5
-// RomanLookup.Add("X", 10);              // X             10
-// RomanLookup.Add("L", 50);              // L             50
-// RomanLookup.Add("C", 100);             // C             100
-// RomanLookup.Add("D", 500);             // D             500
-// RomanLookup.Add("M", 1000);            // M             1000
-//
-// int x = (int)RomanLookup["I"] + (int)RomanLookup["V"];
-//
-// Console.WriteLine("I have been looking for you");
-//
-//
-// Console.WriteLine(RomanLookup["I"]);
-//
-// var x = palindromeChecker.IsPalindrome(123);
-//
-//
-// Console.WriteLine(x);
-//
-//
-// // Console.WriteLine("looks like we are done here");
-//
