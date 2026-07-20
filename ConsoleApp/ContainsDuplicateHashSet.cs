@@ -2,7 +2,20 @@ public static class ContainsDuplicateHashSet
 {
     public static bool HasDuplicate(int[] numbers)
     {
-        // TODO: Solve this using the C# standard library: HashSet<int>.
-        throw new NotImplementedException("Use HashSet<int> and return early when Add returns false.");
+        HashSet<int> s = [];
+
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            if (s.Contains(numbers[i]))
+            {
+                return true;
+            }
+            else
+            {
+                s.Add(numbers[i]);
+            }
+        }
+
+        return false;
     }
 }
