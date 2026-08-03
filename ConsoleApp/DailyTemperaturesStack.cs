@@ -14,9 +14,21 @@ public static class DailyTemperaturesStack
 {
     public static int[] GetWarmerDays(int[] temperatures)
     {
-        // TODO: Implement using a Stack to track indices of unresolved colder days.
-        // Hint: iterate through the array and use a monotonic decreasing stack; when
-        // a warmer day is found, pop and compute the difference for all colder days.
-        throw new NotImplementedException();
+        var warmerDays = new int[temperatures.Length];
+        var unresolvedDays = new Stack<int>();
+
+        for (var currentDay = 0; currentDay < temperatures.Length; currentDay++)
+        {
+            while (unresolvedDays.Count > 0 &&
+                   temperatures[currentDay] > temperatures[unresolvedDays.Peek()])
+            {
+                var colderDay = unresolvedDays.Pop();
+                warmerDays[colderDay] = currentDay - colderDay;
+            }
+
+            unresolvedDays.Push(currentDay);
+        }
+
+        return warmerDays;
     }
 }
